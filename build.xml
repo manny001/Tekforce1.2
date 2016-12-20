@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<project name="tekforce" default="info">
+
+<target name="info" depends="clean">
+<echo>info block executed </echo>
+</target>
+
+
+<target name="clean" depends="compile">
+<echo>clean block executed </echo>
+</target>
+
+
+
+<target name="compile" depends="run">
+<echo>compile block executed </echo>
+<javac srcdir ="./Ant practise" destdir="./Ant practise" />
+</target>
+
+<target name="run" depends="jar">
+<echo>run block executed </echo>
+<java jar="./Ant practise/jar/Tekforce.jar" fork="true" />
+</target>
+
+
+<target name="jar">
+<echo>jar block executed </echo>
+<mkdir dir="./Ant practise/jar"/>
+<jar destfile="./Ant Practise/jar/Tekforce.jar" basedir="./Ant practise" >
+<manifest> 
+<attribute name="Main-class" value="Hello"/>
+</manifest>
+</jar>
+
+</target>
+
+</project>
