@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<project name="tekforce" default="info">
+
+<target name="info">
+<echo>info block executed </echo>
+</target>
+
+<target name="clean">
+<echo>clean block executed </echo>
+</target>
+
+
+</project>
