@@ -1,0 +1,4 @@
+rm abc.txt (remove files)
+rm -rf abc (to remove folder)
+mkdir foldername (to make directory)
+ls -ltr(it gives list in the reverse order)
